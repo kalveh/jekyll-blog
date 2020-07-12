@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://kalveh.github.io
+url: https://github.com/kalveh/jekyll-blog
 date_format: "ordinal"
 title: 雪泥鸿爪
 subtitle: "A glimpse of the passing"
@@ -38,11 +38,11 @@ highlight_theme: github
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: kalveh
+author: Kalveh
 organization: 
 organization_url: 
 github_username: kalveh
-location: Jinling, China
+location: Jl, China
 email: kalveh@hotmail.com
 
 # ---------------- #
