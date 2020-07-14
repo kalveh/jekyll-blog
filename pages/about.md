@@ -1,23 +1,16 @@
 ---
 layout: page
-title: About
-description: A glimpse of the passing
-keywords: Blog
+title: 关于 
+description: 雪泥鸿爪
+keywords: 关于
 comments: false
 menu: 关于
 permalink: /about/
 ---
 
-人生到处知何似，应似飞鸿踏雪泥。
+> 人生到处知何似，应似飞鸿踏雪泥。
+>
+> 泥上偶然留指爪，鸿飞那复计东西。
 
-泥上偶然留指爪，鸿飞那复计东西。
-
-
-## 联系
-
-<ul>
-{% for website in site.data.social %}
-<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">@{{ website.name }}</a></li>
-{% endfor %}
-</ul>
+<img src="{{ assets_base_url }}/assets/images/about.png" alt=""/>
 

@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Links
-description: Linked Out
-keywords: Link
+description: 友情链接
+keywords: 链接
 comments: Flase
 menu: 链接
 permalink: /links/
