@@ -12,5 +12,5 @@ permalink: /about/
 >
 > 泥上偶然留指爪，鸿飞那复计东西。
 
-<img src="/images/about.png" alt=""/>
+<img src="{{ assets_base_url }}/assets/images/about.png" alt="雪泥鸿爪"/>
 
