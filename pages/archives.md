@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catalog
 title: 归档 
 description: 按年份归档
 keywords: 归档
@@ -34,17 +34,17 @@ permalink: /archives/
         {% if thisyear != 1 %}
             </ol>
         {% endif %}
-<h3>{{ post.date | date: '%Y' }} ({{ counts[i] }})</h3>
+        <h3>{{ post.date | date: '%Y' }} ({{ counts[i] }})</h3>
         {% if thisyear != 0 %}
             {% assign thisyear = 0 %}
         {% endif %}
         <ol class="posts-list">
         {% assign i = i | plus: 1 %}
     {% endif %}
-<li class="posts-list-item">
-<span class="posts-list-meta">{{ post.date | date:"%m-%d" }}</span>
-<a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-</li>
+    <li class="posts-list-item">
+        <span class="posts-list-meta">{{ post.date | date:"%m-%d" }}</span>
+        <a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </li>
 {% endfor %}
 </ol>
 </section>
