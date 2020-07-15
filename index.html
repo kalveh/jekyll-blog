@@ -6,7 +6,7 @@ comments: false
 ---
 
 <section class="banner">
-    <div class="collection-head">
+    <div class="collection-head small">
         <div class="container">
             <div class="columns">
                 <div class="column two-thirds">
@@ -59,12 +59,22 @@ comments: false
                                     <span class="meta-info">
                                         <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                                     </span>
-                                    {% for cat in post.categories %}
-                                        <span class="meta-info">
-                                            <span class="octicon octicon-file-directory"></span>
-                                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-                                        </span>
-                                    {% endfor %}
+                                    <span class="meta-info">
+                                    {% if post.categories %}
+                                        <span class="octicon octicon-file-directory"></span> 
+                                        {% for cat in post.categories %}
+                                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a> 
+                                        {% endfor %}
+                                    {% endif %}
+                                    </span>
+                                    <span class="meta-info">
+                                    {% if post.tags %}
+                                        <span class="octicon octicon-tag"></span>
+                                        {% for tag in post.tags %}
+                                            <a href="{{ site.url }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+                                        {% endfor %}
+                                    {% endif %}
+                                    </span>
                                 </p>
                             </li>
                         {% endif %}
@@ -84,12 +94,22 @@ comments: false
                                 <span class="meta-info">
                                     <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                                 </span>
-                                {% for cat in post.categories %}
-                                    <span class="meta-info">
-                                        <span class="octicon octicon-file-directory"></span>
-                                        <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-                                    </span>
-                                {% endfor %}
+                                <span class="meta-info">
+                                {% if post.categories %}
+                                    <span class="octicon octicon-file-directory"></span> 
+                                    {% for cat in post.categories %}
+                                        <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a> 
+                                    {% endfor %}
+                                {% endif %}
+                                </span>
+                                <span class="meta-info">
+                                {% if post.tags %}
+                                    <span class="octicon octicon-tag"></span>
+                                    {% for tag in post.tags %}
+                                        <a href="{{ site.url }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
+                                    {% endfor %}
+                                {% endif %}
+                                </span>
                             </p>
                         </li>
                     {% endif %}
